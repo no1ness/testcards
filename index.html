@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/public/style.css">
+    <title>TailwindCSS</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="px-10 border-b">
+        <a class="uppercase font-bold text-purple-800" href="#">webDev</a>
+        <nav>
+            <ul class="text-red-600 font-semibold">
+                <li class="inline-block py-3 px-2"><a href="#"></a>Home</li>
+                <li class="inline-block py-3 px-2"><a href="#"></a>About</li>
+                <li class="inline-block py-3 px-2"><a href="#"></a>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- breadcrumbs -->
+        <div>
+            <div class="py-4 overflow-y-auto whitespace-nowrap">
+                <a class="text-yellow-500" href="#">Home</a>
+                <span class="mx-2 text-gray-500">&gt;</span>
+                <a class="text-gray-600" href="#">News</a>
+                <span class="mx-2 text-gray-500">&gt;</span>
+                <a class="text-gray-600" href="#">Tech</a>
+            </div>
+        </div>
+    </main>
+
+<div class="container mx-auto">
+
+    <div class="flex flex-row">
+    <div class="basis-1/4 text-gray-950">01</div>
+    <div class="basis-1/4">02</div>
+    <div class="basis-1/2">03</div>
+  </div>
+
+  <div class="grid grid-cols-3 gap-4">
+    <div class="p-4 bg-blue-500">Элемент 1</div>
+    <div class="p-4 bg-red-500">Элемент 2</div>
+    <div class="p-4 bg-green-500">Элемент 3</div>
+  </div>
+
+  <div class="my-40 flex">
+    <div class="relative mx-auto h-10 w-10 animate-bounce">
+      <div class="mx-auto h-16 w-16 animate-pulse rounded-full bg-gray-400"></div>
+      <span class="absolute flex h-5 w-5 animate-spin">
+        <span class="h-4 w-4 rounded-full bg-gray-400"> </span>
+      </span>
+    </div>
+  </div>
+
+    <div class="columns-4 ">
+            <img class="rounded" src="/img/08.12.2022-vevanta-village-30.jpgjajaja-285x426.jpg">
+            <img class="rounded" src="/img/gl-rork-285x426.jpg">
+            <img class="rounded" src="/img/kamen-proek-285x426.jpg">
+            <img class="rounded" src="/img/zavidovo-dlja-gl-285x426.jpg">
+    </div>
+
+</div>
+
+
+    <!-- footer -->
+    <footer class="border-t mt-10 py-10 px-2">
+        <div>
+            <div>
+                <h6 class="font-semibold text-gray-700 mb-4">Company</h6>
+                <ul>
+                    <li a class="inline-block text-gray-500 py-2"><a href="#"></a>Team</li>
+                    <li><a href="#"></a>About Us</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
