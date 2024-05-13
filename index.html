@@ -6,65 +6,145 @@
 <link rel="stylesheet" href="/public/style.css">
     <title>TailwindCSS</title>
 </head>
-<body>
-    <!-- header -->
-    <header class="px-2 border-b flex items-center justify-between">
-        <a class="uppercase font-bold text-purple-800" href="#">webDev
-        <nav class="flex items-center">
-            <ul class="inline-flex items-center">
-                <li class="header-link"><a href="#">Home</li>
-                <li class="header-link"><a href="#">About</li>
-                <li class="header-link"><a href="#">Contact</li>
-            </ul>
-            <ul class="inline-flex items-center">
-                <li><button class="header-btn">Login</button></li>
-                <li><button class="header-btn">Register</button></li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-white dark:bg-slate-900 font-main">
+<div class="max-w-screen-xl mx-auto h-screen grid grid-rows-layout">
 
-    <main>
-        <!-- breadcrumbs -->
-        <div class="px-2 flex items-center">
-            <div class="py-4 overflow-y-auto whitespace-nowrap flex items-center">
-                <a class="text-gray-600" hover:text-gray-900" href="#">Home
-                <span class="mx-2 text-gray-500">&gt;</span>
-                <a class="text-gray-600" hover:text-gray-900" href="#">News
-                <span class="mx-2 text-gray-500">&gt;</span>
-                <a class="text-gray-600" hover:text-gray-900" href="#">Tech
+<!-- header -->
+<header class="px-2 border-b flex items-center justify-between h-14">
+    <a class=" dark:text-purple-500 uppercase font-bold text-logo-main" href="#">webDev</a>
+    <nav class="hidden md:flex items-center">
+        <ul class="inline-flex items-center">
+            <li class="header-link"><a href="#">Home</a></li>
+            <li class="header-link"><a href="#">About</a></li>
+            <li class="header-link"><a href="#">Contact</a></li>
+        </ul>
+        <ul class="inline-flex items-center">
+            <li><button class="header-btn">Login</button></li>
+            <li><button class="header-btn">Register</button></li>
+        </ul>
+    </nav>
+
+    <button class="inline-block md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          
+    </button>
+</header>
+
+<div>
+
+<!-- breadcrumbs -->
+<div class="px-2 flex items-center">
+    <div class="py-4 overflow-y-auto whitespace-nowrap flex items-center">
+        <a class="dark:text-slate-400 text-gray-600" hover:text-gray-900" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+          </svg>
+          </a>
+        <span class=" dark:text-slate-400 mx-2 text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg></span>
+        <a class="dark:text-slate-400 text-gray-600" hover:text-gray-900" href="#">News</a>
+        <span class="mx-2 text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg></span>
+        <a class="dark:text-slate-400 text-gray-600" hover:text-gray-900" href="#">Tech</a>
+    </div>
+    </div>
+    
+    <!-- banners -->
+    <section class="px-2 lg:flex lg:space-x-2">
+        <a class="w-full lg:w-2/3 bg-purple-500 h-96 mb-4 relative rounded inline-block overflow-hidden" href="">
+    <div class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70"></div>
+            <img class="absolute left-0 top-0 w-full h-full z-0 object-cover" src="img/08.12.2022-vevanta-village-30.jpgjajaja-285x426.jpg" alt="news">
+            <div class="p-4 absolute bottom-0 left-0 z-20">
+                <h2 class="text-4xl font-semibold text-gray-100 leading-tight ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <span class="bg-gradient-to-bl from-blue-600 to-indigo-600 text-white inline-flex items-center justify-center px-4 py-1 mb-2">Angular</span>
+                <div class="flex mt-3">
+                    <img class="h-10 w-10 rounded-full mr-2 object-cover " src="https://randomuser.me/api/portraits/men/79.jpg" alt="author">
+                    <div>
+                        <p class="font-semibold text-gray-400 text-sm">John Doe</p>
+                        <time class="text-gray-400 text-xs">14 march</time>
+                    </div>
+                </div>
             </div>
-        </div>
-
+        </a>
+        <a class="w-full lg:w-1/3 bg-indigo-300 h-96 mb-4 relative rounded inline-block overflow-hidden" href="">
+            <div class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70"></div>
+            <img class="absolute left-0 top-0 w-full h-full z-0 object-cover" src="img/gl-rork-285x426.jpg" alt="news">
+            <div class="p-4 absolute bottom-0 left-0 z-20">
+                <h2 class="text-4xl font-semibold text-gray-100 leading-tight ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <span class="bg-gradient-to-bl from-blue-600 to-indigo-600 text-white inline-flex items-center justify-center px-4 py-1 mb-2">React</span>
+                <div class="flex mt-3">
+                    <img class="h-10 w-10 rounded-full mr-2 object-cover " src="https://randomuser.me/api/portraits/men/79.jpg" alt="author">
+                    <div>
+                        <p class="font-semibold text-gray-400 text-sm">John Doe</p>
+                        <time class="text-gray-400 text-xs">14 march</time>
+                    </div>
+                </div>
+            </div>
+        </a>
+    
+    </section>
+    
+    <main class="lg:flex">
+       <div class="w-full lg:w-2/3">
+    
         <!-- post cards -->
         <section class="px-2">
-            <a class="block mb-10" href="#">
-                <div class="flex">
+            <a class="block w-full lg:flex mb-10" href="#">
+            <img class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4" src="img/kamen-proek-285x426.jpg" alt="img">
+                <div class="flex flex-col justify-between">
                     <div>
-                        <h3 class="mt-3 mb-2 text-grey-700 font-bold text-2xl">Lorem ipsum dolor sit amet</h3>
-                        <p class="text-grey-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id orci at felis volutpat vehicula quis ac leo. Vestibulum in sem iaculis, convallis erat at, congue eros. Nunc vel vehicula eros, in vehicula turpis. Integer imperdiet, odio sed ullamcorper molestie, mi metus condimentum purus, ut facilisis libero lectus at erat. Aliquam erat volutpat. In in volutpat tortor. Nulla mollis faucibus sem, in tincidunt dui maximus vel. In interdum consequat laoreet.</p>
+                        <h3 class="dark:text-white mb-2 text-grey-700 font-bold text-2xl">Lorem ipsum dolor sit amet</h3>
+                        <p class="text-grey-700 dark:text-slate-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id orci at felis volutpat vehicula quis ac leo. Vestibulum in sem iaculis, convallis erat at, congue eros. Nunc vel vehicula eros, in vehicula turpis. Integer imperdiet, odio sed ullamcorper molestie, mi metus condimentum purus, ut facilisis libero lectus at erat. Aliquam erat volutpat. In in volutpat tortor. Nulla mollis faucibus sem, in tincidunt dui maximus vel. In interdum consequat laoreet.</p>
+                    </div>
+                    <div class="flex mt-3">
+                        <img class="h-10 w-10 rounded-full mr-2 object-cover " src="https://randomuser.me/api/portraits/men/79.jpg" alt="author">
+                        <div>
+                            <p class="font-semibold text-gray-400 text-sm">John Doe</p>
+                            <time class="text-gray-400 text-xs">14 march</time>
+                        </div>
                     </div>
                 </div>
             </a>
-
-            <a class="block mb-10" href="#">
-                <div class="flex">
+    
+            <a class="block w-full lg:flex mb-10" href="#">
+                <img class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4" src="img/kamen-proek-285x426.jpg" alt="img">
+                <div class="flex flex-col justify-between">
                     <div>
-                        <h3 class="mt-3 mb-2 text-grey-700 font-bold text-2xl">Почему он используется?</h3>
-                        <p class="text-grey-700">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст..</p>
+                        <h3 class="dark:text-white mb-2 text-grey-700 font-bold text-2xl">Почему он используется?</h3>
+                        <p class="text-grey-700 dark:text-slate-400">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст..</p>
+                    </div>
+                    <div class="flex mt-3">
+                        <img class="h-10 w-10 rounded-full mr-2 object-cover " src="https://randomuser.me/api/portraits/men/79.jpg" alt="author">
+                        <div>
+                            <p class="font-semibold text-gray-400 text-sm">John Doe</p>
+                            <time class="text-gray-400 text-xs">14 march</time>
+                        </div>
                     </div>
                 </div>
             </a>
-            <a class="block mb-10" href="#">
-                <div class="flex">
+            <a class="block w-full lg:flex mb-10" href="#">
+                <img class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4" src="img/kamen-proek-285x426.jpg" alt="img">
+                <div class="flex flex-col justify-between">
                     <div>
-                        <h3 class="mt-3 mb-2 text-grey-700 font-bold text-2xl">Где его взять?</h3>
-                        <p class="text-grey-700">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца.</p>
+                        <h3 class=" dark:text-white mb-2 text-grey-700 font-bold text-2xl">Где его взять?</h3>
+                        <p class="text-grey-700 dark:text-slate-400">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца.</p>
+                    </div>
+                    <div class="flex mt-3">
+                        <img class="h-10 w-10 rounded-full mr-2 object-cover " src="https://randomuser.me/api/portraits/men/79.jpg" alt="author">
+                        <div>
+                            <p class="font-semibold text-gray-400 text-sm">John Doe</p>
+                            <time class="text-gray-400 text-xs">14 march</time>
+                        </div>
                     </div>
                 </div>
             </a>
         </section>
+        
         <!-- <pagination -->
-<div class="mt-20 mb-10">
+    <div class="mt-20 mb-10">
     <ul class="flex justify-center">
         <li><a class="pagination-item rounded-l-lg href="#">Previous</a></li>
         <li><a class="pagination-item href="#">1</a></li>
@@ -73,86 +153,166 @@
         <li><a class="pagination-item href="#">4</a></li>
         <li><a class="pagination-item href="#">5</a></li>
         <li><a class="pagination-item rounded-r-lg href="#">Next</a></li>
-    </ul>
+    </ul></div></div>
+    
+    
+    
+    <div class="w-full lg:w-1/3 px-2 md:flex md:space-x-6 lg:block lg:space-x-0">
+    
+    
+        
+    
+        <!-- topics -->
+    <div class="w-full md:w-1/2 lg:w-full mb-5">
+        <h5 class="dark:text-white font-bold text-lg uppercase text-gray-700 mb-2">
+        Popular News
+    </h5>
+        <ul>
+            <li class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200">
+                <a class=" dark:text-slate-400 flex items-center text-gray-600" href="#">
+                <span class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-green-500 to-green-700"></span>
+                Vue
+                <span class="text-gray-500 ml-auto">23 articles</span>
+            </a>
+        </li>
+        <li class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200">
+            <a class="dark:text-slate-400 flex items-center text-gray-600" href="#">
+            <span class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-orange-500 to-orange-700"></span>
+            Svelte
+            <span class="text-gray-500 ml-auto">20 articles</span>
+        </a>
+    </li>
+    <li class=" dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200">
+        <a class=" dark:text-slate-400 flex items-center text-gray-600" href="#">
+        <span class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-red-500 to-red-700"></span>
+        Angular
+        <span class="text-gray-500 ml-auto">15 articles</span>
+    </a>
+    </li>
+    <li class=" dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200">
+        <a class=" dark:text-slate-400 flex items-center text-gray-600" href="#">
+        <span class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-blue-500 to-blue-700"></span>
+        React
+        <span class="text-gray-500 ml-auto">7 articles</span>
+    </a>
+    </li>
+        </ul>
+        
+        
+    </div>
+    
+    
+    
+    
+    <div class="w-full md:w-1/2 lg:w-full">
+    
+    <!-- divider -->
+    <div class="border border-dotted md:hidden max-lg:block"</div>
+    
+     <!-- subscribe -->
+     <div class="my-5 md:my-0 lg:my-5">
+        <h5 class=" dark:text-white font-bold text-lg uppercase text-gray-700 mb-2">Subscribe</h5>
+        <p class="dark:text-slate-400 text-gray-600 mb-4">Subscribe to our newsletter.</p>
+        <input placeholder="your email adress" type="email" class="text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600">
+        <button class="px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800">Subscribe</button>
+    </div>
+    
+    
+    <!-- divider -->
+    <div class="border border-dotted md:hidden max-lg:block"</div>
+    </div>
+    
+           
+        </main>
+    
+    
+    
+     
+    
+
 </div>
-<!-- divider -->
-<div class="border border-dotted"</div>
 
-        <!-- subscribe -->
-        <div class="my-5">
-            <h5 class="font-bold text-lg uppercase text-gray-700 mb-2">Subscribe</h5>
-            <p class="text-gray-600 mb-4">Subscribe to our newsletter.</p>
-            <input placeholder="your email adress" type="email" class="text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600">
-            <button class="px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800">Subscribe</button>
+
+<!-- footer -->
+<footer class="border-t mt-10 py-10 px-2">
+    <div class="md:flex">
+        <div class="w-full mb-5 md:w-2/5">
+            <h6 class=" dark:text-white font-semibold text-gray-700 mb-3">Company</h6>
+            <ul>
+                <li a class="footer-link"><a href="#">Team</li>
+                <li a class="footer-link"><a href="#">About Us</li>
+            </ul>
         </div>
 
+        <div class="w-full mb-5 md:w-2/5">
+            <h6 class="dark:text-white font-semibold text-gray-700 mb-3">Content</h6>
+            <ul>
+                <li a class="footer-link"><a href="#">Block</a></li>
+                <li a class="footer-link"><a href="#">Policy</a></li>
+                <li a class="footer-link"><a href="#">Documentation</a></li>
+            </ul>
+        </div>
 
-        <!-- divider -->
-<div class="border border-dotted"</div>
-    </main>
-    <div class="mx-auto bg-pink-300 rounded p-2 md:p-10 "><!--контейнер3-->
+        <div class="w-full md:w-1/5">
+            <h6 class=" dark:text-white font-semibold text-gray-700 mb-3">Contact Us</h6>
+            <ul class="flex">
+                <li class="mr-2"><a class="footer-link"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                  </svg></a>
+                  </li>
+                <li class="mr-2"><a class="footer-link"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" />
+                  </svg></a>
+                  </li>
+                <li><a class="footer-link"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                  </svg></a>
+                  </li>
+            </ul>
+        </div>
 
-<!-- <div class="container mx-auto bg-pink-300 rounded">контейнер1 -->
+    </div>
+</footer>
 
-  <div class="grid grid-cols-2 xs:grid-cols-4">
-    <div class="p-2">
-      <img class="rounded object-cover w-full" src="/img/08.12.2022-vevanta-village-30.jpgjajaja-285x426.jpg">
+
+<div class="mx-auto rounded p-2 md:p-10 ">  <!-- картинки -->
+
+    <div class="grid grid-cols-2 xs:grid-cols-4">
+      <div class="p-2">
+        <img class="rounded object-cover w-full" src="/img/08.12.2022-vevanta-village-30.jpgjajaja-285x426.jpg">
+      </div>
+      <div class="p-2">
+        <img class="rounded object-cover w-full" src="/img/gl-rork-285x426.jpg">
+      </div>
+      <div class="p-2">
+        <img class="rounded object-cover w-full" src="/img/kamen-proek-285x426.jpg">
+      </div>
+      <div class="p-2">
+        <img class="rounded object-cover w-full" src="/img/zavidovo-dlja-gl-285x426.jpg">
+      </div>
     </div>
-    <div class="p-2">
-      <img class="rounded object-cover w-full" src="/img/gl-rork-285x426.jpg">
-    </div>
-    <div class="p-2">
-      <img class="rounded object-cover w-full" src="/img/kamen-proek-285x426.jpg">
-    </div>
-    <div class="p-2">
-      <img class="rounded object-cover w-full" src="/img/zavidovo-dlja-gl-285x426.jpg">
-    </div>
+  
+   
+  <br><hr class="border-t"><br>
+  
+  
+      <div class="flex flex-wrap">
+          <div class="w-1/2 xs:w-1/4 p-2">
+              <img class="rounded object-cover w-full" src="/img/08.12.2022-vevanta-village-30.jpgjajaja-285x426.jpg">
+          </div>
+          <div class="w-1/2 xs:w-1/4 p-2">
+              <img class="rounded object-cover w-full" src="/img/gl-rork-285x426.jpg">
+          </div>
+          <div class="w-1/2 xs:w-1/4 p-2">
+              <img class="rounded object-cover w-full" src="/img/kamen-proek-285x426.jpg">
+          </div>
+          <div class="w-1/2 xs:w-1/4 p-2">
+              <img class="rounded object-cover w-full" src="/img/zavidovo-dlja-gl-285x426.jpg">
+          </div>
+      </div>
   </div>
- <!-- </div>  контейнер1 -->
- 
-<br><hr class="border-t"><br>
+  </div><!-- картинки -->
 
- <!-- <div class="container mx-auto bg-purple-300 rounded">контейнер2 -->
-    <div class="flex flex-wrap">
-        <div class="w-1/2 xs:w-1/4 p-2">
-            <img class="rounded object-cover w-full" src="/img/08.12.2022-vevanta-village-30.jpgjajaja-285x426.jpg">
-        </div>
-        <div class="w-1/2 xs:w-1/4 p-2">
-            <img class="rounded object-cover w-full" src="/img/gl-rork-285x426.jpg">
-        </div>
-        <div class="w-1/2 xs:w-1/4 p-2">
-            <img class="rounded object-cover w-full" src="/img/kamen-proek-285x426.jpg">
-        </div>
-        <div class="w-1/2 xs:w-1/4 p-2">
-            <img class="rounded object-cover w-full" src="/img/zavidovo-dlja-gl-285x426.jpg">
-        </div>
-    </div>
-<!-- </div>контейнер2 -->
-
-
-</div><!--контейнер3-->
-
-    <!-- footer -->
-    <footer class="border-t mt-10 py-10 px-2">
-        <div>
-            <div class="mb-5">
-                <h6 class="font-semibold text-gray-700 mb-4">Company</h6>
-                <ul>
-                    <li a class=" text-gray-500 py-2 hover:underline decoration-grey-700 underline-offset-2"><a href="#">Team</li>
-                    <li a class=" text-gray-500 py-2 hover:underline decoration-grey-700 underline-offset-2"><a href="#">About Us</li>
-                </ul>
-            </div>
-
-            <div>
-                <h6 class="font-semibold text-gray-700 mb-4">Content</h6>
-                <ul>
-                    <li a class=" text-gray-500 py-2 hover:underline decoration-grey-700 underline-offset-2"><a href="#">Block</li>
-                    <li a class=" text-gray-500 py-2 hover:underline decoration-grey-700 underline-offset-2"><a href="#">Policy</li>
-                    <li a class=" text-gray-500 py-2 hover:underline decoration-grey-700 underline-offset-2"><a href="#">Documentation</li>
-                </ul>
-            </div>
-
-        </div>
-    </footer>
+</div>
 </body>
 </html>
