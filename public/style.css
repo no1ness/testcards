@@ -689,6 +689,13 @@ video {
   margin-top: 0.75rem;
 }
 
+.line-clamp-3{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
 .block{
   display: block;
 }
@@ -1305,12 +1312,22 @@ video {
   .ss\:mb-2{
     margin-bottom: 0.5rem;
   }
+
+  .ss\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
 @media (min-width: 640px){
   .sm\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .sm\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1353,6 +1370,11 @@ video {
   .md\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1414,6 +1436,11 @@ video {
 
   .lg\:text-lg{
     font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-xl{
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
