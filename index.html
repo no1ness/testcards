@@ -9,349 +9,67 @@
 <body class="bg-white dark:bg-slate-900 font-main">
 <div class="max-w-screen-xl mx-auto h-screen grid grid-rows-layout">
 
-<!-- header -->
-<header class="px-2 border-b flex items-center justify-between h-14">
-    <a class=" dark:text-purple-500 uppercase font-bold text-logo-main" href="#">webDev</a>
-    <nav class="hidden md:flex items-center">
-        <ul class="inline-flex items-center">
-            <li class="header-link"><a href="#">Home</a></li>
-            <li class="header-link"><a href="#">About</a></li>
-            <li class="header-link"><a href="#">Contact</a></li>
-        </ul>
-        <ul class="inline-flex items-center">
-            <li><button class="header-btn">Login</button></li>
-            <li><button class="header-btn">Register</button></li>
-        </ul>
-    </nav>
-
-    <button class="inline-block md:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-          
-    </button>
-</header>
-
-<div>
-
-<!-- breadcrumbs -->
-<div class="px-2 flex items-center">
-    <div class="py-4 overflow-y-auto whitespace-nowrap flex items-center">
-        <a class="dark:text-slate-400 text-gray-600" hover:text-gray-900" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-          </svg>
-          </a>
-        <span class=" dark:text-slate-400 mx-2 text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-          </svg></span>
-        <a class="dark:text-slate-400 text-gray-600" hover:text-gray-900" href="#">News</a>
-        <span class="mx-2 text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-          </svg></span>
-        <a class="dark:text-slate-400 text-gray-600" hover:text-gray-900" href="#">Tech</a>
-    </div>
-    </div>
-    
-    <!-- banners -->
-    <section class="px-2 lg:flex lg:space-x-2">
-        <a class="w-full lg:w-2/3 bg-purple-500 h-96 mb-4 relative rounded inline-block overflow-hidden" href="">
-    <div class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70"></div>
-            <img class="absolute left-0 top-0 w-full h-full z-0 object-cover" src="img/08.12.2022-vevanta-village-30.jpgjajaja-285x426.jpg" alt="news">
-            <div class="p-4 absolute bottom-0 left-0 z-20">
-                <h2 class="text-4xl font-semibold text-gray-100 leading-tight ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                <span class="bg-gradient-to-bl from-blue-600 to-indigo-600 text-white inline-flex items-center justify-center px-4 py-1 mb-2">Angular</span>
-                <div class="flex mt-3">
-                    <img class="h-10 w-10 rounded-full mr-2 object-cover " src="https://randomuser.me/api/portraits/men/79.jpg" alt="author">
-                    <div>
-                        <p class="font-semibold text-gray-400 text-sm">John Doe</p>
-                        <time class="text-gray-400 text-xs">14 march</time>
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a class="w-full lg:w-1/3 bg-indigo-300 h-96 mb-4 relative rounded inline-block overflow-hidden" href="">
-            <div class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70"></div>
-            <img class="absolute left-0 top-0 w-full h-full z-0 object-cover" src="img/gl-rork-285x426.jpg" alt="news">
-            <div class="p-4 absolute bottom-0 left-0 z-20">
-                <h2 class="text-4xl font-semibold text-gray-100 leading-tight ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                <span class="bg-gradient-to-bl from-blue-600 to-indigo-600 text-white inline-flex items-center justify-center px-4 py-1 mb-2">React</span>
-                <div class="flex mt-3">
-                    <img class="h-10 w-10 rounded-full mr-2 object-cover " src="https://randomuser.me/api/portraits/men/79.jpg" alt="author">
-                    <div>
-                        <p class="font-semibold text-gray-400 text-sm">John Doe</p>
-                        <time class="text-gray-400 text-xs">14 march</time>
-                    </div>
-                </div>
-            </div>
-        </a>
-    
-    </section>
-    
-    <main class="lg:flex">
-       <div class="w-full lg:w-2/3">
-    
-        <!-- post cards -->
-        <section class="px-2">
-            <a class="block w-full lg:flex mb-10" href="#">
-            <img class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4" src="img/kamen-proek-285x426.jpg" alt="img">
-                <div class="flex flex-col justify-between">
-                    <div>
-                        <h3 class="dark:text-white mb-2 text-grey-700 font-bold text-2xl">Lorem ipsum dolor sit amet</h3>
-                        <p class="text-grey-700 dark:text-slate-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id orci at felis volutpat vehicula quis ac leo. Vestibulum in sem iaculis, convallis erat at, congue eros. Nunc vel vehicula eros, in vehicula turpis. Integer imperdiet, odio sed ullamcorper molestie, mi metus condimentum purus, ut facilisis libero lectus at erat. Aliquam erat volutpat. In in volutpat tortor. Nulla mollis faucibus sem, in tincidunt dui maximus vel. In interdum consequat laoreet.</p>
-                    </div>
-                    <div class="flex mt-3">
-                        <img class="h-10 w-10 rounded-full mr-2 object-cover " src="https://randomuser.me/api/portraits/men/79.jpg" alt="author">
-                        <div>
-                            <p class="font-semibold text-gray-400 text-sm">John Doe</p>
-                            <time class="text-gray-400 text-xs">14 march</time>
-                        </div>
-                    </div>
-                </div>
-            </a>
-    
-            <a class="block w-full lg:flex mb-10" href="#">
-                <img class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4" src="img/kamen-proek-285x426.jpg" alt="img">
-                <div class="flex flex-col justify-between">
-                    <div>
-                        <h3 class="dark:text-white mb-2 text-grey-700 font-bold text-2xl">Почему он используется?</h3>
-                        <p class="text-grey-700 dark:text-slate-400">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст..</p>
-                    </div>
-                    <div class="flex mt-3">
-                        <img class="h-10 w-10 rounded-full mr-2 object-cover " src="https://randomuser.me/api/portraits/men/79.jpg" alt="author">
-                        <div>
-                            <p class="font-semibold text-gray-400 text-sm">John Doe</p>
-                            <time class="text-gray-400 text-xs">14 march</time>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a class="block w-full lg:flex mb-10" href="#">
-                <img class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4" src="img/kamen-proek-285x426.jpg" alt="img">
-                <div class="flex flex-col justify-between">
-                    <div>
-                        <h3 class=" dark:text-white mb-2 text-grey-700 font-bold text-2xl">Где его взять?</h3>
-                        <p class="text-grey-700 dark:text-slate-400">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца.</p>
-                    </div>
-                    <div class="flex mt-3">
-                        <img class="h-10 w-10 rounded-full mr-2 object-cover " src="https://randomuser.me/api/portraits/men/79.jpg" alt="author">
-                        <div>
-                            <p class="font-semibold text-gray-400 text-sm">John Doe</p>
-                            <time class="text-gray-400 text-xs">14 march</time>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </section>
-        
-        <!-- <pagination -->
-    <div class="mt-20 mb-10">
-    <ul class="flex justify-center">
-        <li><a class="pagination-item rounded-l-lg href="#">Previous</a></li>
-        <li><a class="pagination-item href="#">1</a></li>
-        <li><a class="pagination-item href="#">2</a></li>
-        <li><a class="inline-block py-1 px-3 border border-gray-300 text-blue-600 hover:bg-blue-100 href="#">3</a></li>
-        <li><a class="pagination-item href="#">4</a></li>
-        <li><a class="pagination-item href="#">5</a></li>
-        <li><a class="pagination-item rounded-r-lg href="#">Next</a></li>
-    </ul></div></div>
-    
-    
-    
-    <div class="w-full lg:w-1/3 px-2 md:flex md:space-x-6 lg:block lg:space-x-0">
-    
-    
-        
-    
-        <!-- topics -->
-    <div class="w-full md:w-1/2 lg:w-full mb-5">
-        <h5 class="dark:text-white font-bold text-lg uppercase text-gray-700 mb-2">
-        Popular News
-    </h5>
-        <ul>
-            <li class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200">
-                <a class=" dark:text-slate-400 flex items-center text-gray-600" href="#">
-                <span class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-green-500 to-green-700"></span>
-                Vue
-                <span class="text-gray-500 ml-auto">23 articles</span>
-            </a>
-        </li>
-        <li class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200">
-            <a class="dark:text-slate-400 flex items-center text-gray-600" href="#">
-            <span class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-orange-500 to-orange-700"></span>
-            Svelte
-            <span class="text-gray-500 ml-auto">20 articles</span>
-        </a>
-    </li>
-    <li class=" dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200">
-        <a class=" dark:text-slate-400 flex items-center text-gray-600" href="#">
-        <span class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-red-500 to-red-700"></span>
-        Angular
-        <span class="text-gray-500 ml-auto">15 articles</span>
-    </a>
-    </li>
-    <li class=" dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200">
-        <a class=" dark:text-slate-400 flex items-center text-gray-600" href="#">
-        <span class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-blue-500 to-blue-700"></span>
-        React
-        <span class="text-gray-500 ml-auto">7 articles</span>
-    </a>
-    </li>
-        </ul>
-        
-        
-    </div>
-    
-    
-    
-    
-    <div class="w-full md:w-1/2 lg:w-full">
-    
-    <!-- divider -->
-    <div class="border border-dotted md:hidden max-lg:block"</div>
-    
-     <!-- subscribe -->
-     <div class="my-5 md:my-0 lg:my-5">
-        <h5 class=" dark:text-white font-bold text-lg uppercase text-gray-700 mb-2">Subscribe</h5>
-        <p class="dark:text-slate-400 text-gray-600 mb-4">Subscribe to our newsletter.</p>
-        <input placeholder="your email adress" type="email" class="text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600">
-        <button class="px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800">Subscribe</button>
-    </div>
-    
-    
-    <!-- divider -->
-    <div class="border border-dotted md:hidden max-lg:block"</div>
-    </div>
-    
-           
-        </main>
-    
-    
-    
-     
-    
-
-</div>
 
 
-<!-- footer -->
-<footer class="border-t mt-10 py-10 px-2">
-    <div class="md:flex">
-        <div class="w-full mb-5 md:w-2/5">
-            <h6 class=" dark:text-white font-semibold text-gray-700 mb-3">Company</h6>
-            <ul>
-                <li a class="footer-link"><a href="#">Team</li>
-                <li a class="footer-link"><a href="#">About Us</li>
-            </ul>
-        </div>
-
-        <div class="w-full mb-5 md:w-2/5">
-            <h6 class="dark:text-white font-semibold text-gray-700 mb-3">Content</h6>
-            <ul>
-                <li a class="footer-link"><a href="#">Block</a></li>
-                <li a class="footer-link"><a href="#">Policy</a></li>
-                <li a class="footer-link"><a href="#">Documentation</a></li>
-            </ul>
-        </div>
-
-        <div class="w-full md:w-1/5">
-            <h6 class=" dark:text-white font-semibold text-gray-700 mb-3">Contact Us</h6>
-            <ul class="flex">
-                <li class="mr-2"><a class="footer-link"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
-                  </svg></a>
-                  </li>
-                <li class="mr-2"><a class="footer-link"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" />
-                  </svg></a>
-                  </li>
-                <li><a class="footer-link"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-                  </svg></a>
-                  </li>
-            </ul>
-        </div>
-
-    </div>
-</footer>
-
-
-<div class="mx-auto rounded p-2 md:p-10 ">
-    <!-- картинки -->
+<div class="mx-auto rounded p-2 md:p-10 "><!-- картинки -->
   
-    <div class="grid grid-cols-2 xs:grid-cols-4">
-      <a href="#" class="p-2 relative">
+    <div class="grid grid-cols-2 xs:grid-cols-4 gap-3">
+      <a href="#" class="relative">
         <img class="rounded object-cover w-full" src="/img/08.12.2022-vevanta-village-30.jpgjajaja-285x426.jpg">
         <span class="absolute top-0 transform -translate-x-1/2  left-1/2 mt-10 flex space-x-2 text-white font-bold text-xs sm:text-sm md:text-base lg:text-lg">Подписывайтесь на наш телеграм канал</span>
-        <div class="md:w-1/2 absolute bottom-0 left-0 mb-8 ml-8 flex space-x-2">
-          <span class="[&>svg]:sm:w-10 [&>svg]:sm:h-10 [&>svg]:h-6 [&>svg]:w-6 [&>svg]:fill-[#0088cc]">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                    <path
-                      d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z" />
-                  </svg>
-                </span>
+        <div class=" bg-blue-500 rounded-full absolute bottom-0 left-0 mb-4 ml-4 flex space-x-2">
+            <span class=" [&>svg]:sm:w-10 [&>svg]:sm:h-10 [&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-white">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" style="fill: rgb(255, 255, 255);" transform="matrix(1, 0, 0, 1, -8.881784197001252e-16, 0)"/>
+                  <path d="M8.93822 25.174C11.7438 23.6286 14.8756 22.3388 17.8018 21.0424C22.836 18.919 27.8902 16.8324 32.9954 14.8898C33.9887 14.5588 35.7734 14.2351 35.9484 15.7071C35.8526 17.7907 35.4584 19.8621 35.188 21.9335C34.5017 26.4887 33.7085 31.0283 32.935 35.5685C32.6685 37.0808 30.774 37.8637 29.5618 36.8959C26.6486 34.9281 23.713 32.9795 20.837 30.9661C19.8949 30.0088 20.7685 28.6341 21.6099 27.9505C24.0093 25.5859 26.5539 23.5769 28.8279 21.0901C29.4413 19.6088 27.6289 20.8572 27.0311 21.2397C23.7463 23.5033 20.5419 25.9051 17.0787 27.8945C15.3097 28.8683 13.2479 28.0361 11.4797 27.4927C9.89428 26.8363 7.57106 26.175 8.93806 25.1741L8.93822 25.174Z" style="fill: rgb(90, 70, 255);" transform="matrix(1, 0, 0, 1, -8.881784197001252e-16, 0)"/>
+                </svg>
+              </span>
         </div>
       </a>
-      <a href="#" class="p-2 relative">
+      <a href="#" class="gap-2 relative">
         <img class="rounded object-cover w-full" src="/img/gl-rork-285x426.jpg">
         <span class="absolute top-0 transform -translate-x-1/2  left-1/2 mt-10 flex space-x-2 text-white font-bold text-xs sm:text-sm md:text-base lg:text-lg">Подписывайтесь на наш телеграм канал</span>
-        <div class="md:w-1/2 absolute bottom-0 left-0 mb-8 ml-8 flex space-x-2">
+        <div class="md:w-1/2 absolute bottom-0 left-0 mb-4 ml-4 flex space-x-2">
           <span class="[&>svg]:sm:w-10 [&>svg]:sm:h-10 [&>svg]:h-6 [&>svg]:w-6 [&>svg]:fill-[#0088cc]">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                    <path
-                      d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z" />
-                  </svg>
+            <?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" style="fill: rgb(255, 255, 255);" transform="matrix(1, 0, 0, 1, -8.881784197001252e-16, 0)"/>
+  <path d="M8.93822 25.174C11.7438 23.6286 14.8756 22.3388 17.8018 21.0424C22.836 18.919 27.8902 16.8324 32.9954 14.8898C33.9887 14.5588 35.7734 14.2351 35.9484 15.7071C35.8526 17.7907 35.4584 19.8621 35.188 21.9335C34.5017 26.4887 33.7085 31.0283 32.935 35.5685C32.6685 37.0808 30.774 37.8637 29.5618 36.8959C26.6486 34.9281 23.713 32.9795 20.837 30.9661C19.8949 30.0088 20.7685 28.6341 21.6099 27.9505C24.0093 25.5859 26.5539 23.5769 28.8279 21.0901C29.4413 19.6088 27.6289 20.8572 27.0311 21.2397C23.7463 23.5033 20.5419 25.9051 17.0787 27.8945C15.3097 28.8683 13.2479 28.0361 11.4797 27.4927C9.89428 26.8363 7.57106 26.175 8.93806 25.1741L8.93822 25.174Z" style="fill: rgb(90, 70, 255);" transform="matrix(1, 0, 0, 1, -8.881784197001252e-16, 0)"/>
+</svg>
                 </span>
         </div>
       </a>
-      <a href="#" class="p-2 relative block">
+      <a href="#" class="relative">
         <img class="rounded object-cover w-full" src="/img/kamen-proek-285x426.jpg">
         <span class="absolute top-0 transform -translate-x-1/2  left-1/2 mt-10 flex space-x-2 text-white font-bold text-xs sm:text-sm md:text-base lg:text-lg">Подписывайтесь на наш телеграм канал</span>
-        <div class="md:w-1/2 absolute bottom-0 left-0 mb-8 ml-8 flex space-x-2">
+        <div class="md:w-1/2 absolute bottom-0 left-0 mb-4 ml-4 flex space-x-2">
           <span class="[&>svg]:sm:w-10 [&>svg]:sm:h-10 [&>svg]:h-6 [&>svg]:w-6 [&>svg]:fill-[#0088cc]">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                    <path
-                      d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z" />
-                  </svg>
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" style="fill: rgb(255, 255, 255);" transform="matrix(1, 0, 0, 1, -8.881784197001252e-16, 0)"/>
+              <path d="M8.93822 25.174C11.7438 23.6286 14.8756 22.3388 17.8018 21.0424C22.836 18.919 27.8902 16.8324 32.9954 14.8898C33.9887 14.5588 35.7734 14.2351 35.9484 15.7071C35.8526 17.7907 35.4584 19.8621 35.188 21.9335C34.5017 26.4887 33.7085 31.0283 32.935 35.5685C32.6685 37.0808 30.774 37.8637 29.5618 36.8959C26.6486 34.9281 23.713 32.9795 20.837 30.9661C19.8949 30.0088 20.7685 28.6341 21.6099 27.9505C24.0093 25.5859 26.5539 23.5769 28.8279 21.0901C29.4413 19.6088 27.6289 20.8572 27.0311 21.2397C23.7463 23.5033 20.5419 25.9051 17.0787 27.8945C15.3097 28.8683 13.2479 28.0361 11.4797 27.4927C9.89428 26.8363 7.57106 26.175 8.93806 25.1741L8.93822 25.174Z" style="fill: rgb(90, 70, 255);" transform="matrix(1, 0, 0, 1, -8.881784197001252e-16, 0)"/>
+            </svg>
                 </span>
         </div>
       </a>
-      <a href="#" class="p-2 relative">
+      <a href="#" class="relative">
         <img class="rounded object-cover w-full" src="/img/zavidovo-dlja-gl-285x426.jpg">
         <span class="absolute top-0 transform -translate-x-1/2  left-1/2 mt-10 flex space-x-2 text-white font-bold text-xs sm:text-sm md:text-base lg:text-lg">Подписывайтесь на наш телеграм канал</span>
-        <div class="md:w-1/2 absolute bottom-0 left-0 mb-8 ml-8 flex space-x-2">
-          <span class="[&>svg]:sm:w-10 [&>svg]:sm:h-10 [&>svg]:h-6 [&>svg]:w-6 [&>svg]:fill-[#0088cc]">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                    <path
-                      d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z" />
-                  </svg>
+        <div class="md:w-1/2 absolute bottom-0 left-0 mb-4 ml-4 flex space-x-2">
+          <span class=" [&>svg]:sm:w-10 [&>svg]:sm:h-10 [&>svg]:h-6 [&>svg]:w-6 [&>svg]:fill-[#0088cc]">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" style="fill: rgb(255, 255, 255);" transform="matrix(1, 0, 0, 1, -8.881784197001252e-16, 0)"/>
+              <path d="M8.93822 25.174C11.7438 23.6286 14.8756 22.3388 17.8018 21.0424C22.836 18.919 27.8902 16.8324 32.9954 14.8898C33.9887 14.5588 35.7734 14.2351 35.9484 15.7071C35.8526 17.7907 35.4584 19.8621 35.188 21.9335C34.5017 26.4887 33.7085 31.0283 32.935 35.5685C32.6685 37.0808 30.774 37.8637 29.5618 36.8959C26.6486 34.9281 23.713 32.9795 20.837 30.9661C19.8949 30.0088 20.7685 28.6341 21.6099 27.9505C24.0093 25.5859 26.5539 23.5769 28.8279 21.0901C29.4413 19.6088 27.6289 20.8572 27.0311 21.2397C23.7463 23.5033 20.5419 25.9051 17.0787 27.8945C15.3097 28.8683 13.2479 28.0361 11.4797 27.4927C9.89428 26.8363 7.57106 26.175 8.93806 25.1741L8.93822 25.174Z" style="fill: rgb(90, 70, 255);" transform="matrix(1, 0, 0, 1, -8.881784197001252e-16, 0)"/>
+            </svg>
                 </span>
         </div>
       </a>
     </div>
   
    
-  <br><hr class="border-t"><br>
-  
-  
-      <div class="flex flex-wrap">
-          <div class="w-1/2 xs:w-1/4 p-2">
-              <img class="rounded object-cover w-full" src="/img/08.12.2022-vevanta-village-30.jpgjajaja-285x426.jpg">
-          </div>
-          <div class="w-1/2 xs:w-1/4 p-2">
-              <img class="rounded object-cover w-full" src="/img/gl-rork-285x426.jpg">
-          </div>
-          <div class="w-1/2 xs:w-1/4 p-2">
-              <img class="rounded object-cover w-full" src="/img/kamen-proek-285x426.jpg">
-          </div>
-          <div class="w-1/2 xs:w-1/4 p-2">
-              <img class="rounded object-cover w-full" src="/img/zavidovo-dlja-gl-285x426.jpg">
-          </div>
-      </div>
-  </div>
+ 
   </div><!-- картинки -->
 
 </div>

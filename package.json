@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/no1ness/tailwind.git"
+    "url": "git+https://github.com/no1ness/testcards.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/no1ness/tailwind/issues"
+    "url": "https://github.com/no1ness/testcards/issues"
   },
-  "homepage": "https://github.com/no1ness/tailwind#readme",
+  "homepage": "https://github.com/no1ness/testcards#readme",
   "devDependencies": {
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3"
