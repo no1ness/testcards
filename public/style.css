@@ -610,6 +610,10 @@ video {
   top: 0px;
 }
 
+.right-0{
+  right: 0px;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -1290,6 +1294,16 @@ video {
 @media not all and (min-width: 1024px){
   .max-lg\:block{
     display: block;
+  }
+}
+
+@media (min-width: 320px){
+  .ss\:ml-2{
+    margin-left: 0.5rem;
+  }
+
+  .ss\:mb-2{
+    margin-bottom: 0.5rem;
   }
 }
 
